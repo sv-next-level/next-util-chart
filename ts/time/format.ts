@@ -1,4 +1,4 @@
-export const enum CHART_TIME_FORMAT {
+export enum CHART_TIME_FORMAT {
   SECONDS = "SECONDS",
   MINUTES = "MINUTES",
   HOURS = "HOURS",
