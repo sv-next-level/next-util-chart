@@ -1,13 +1,17 @@
 import { CHART_TIME_FORMAT } from "./format";
 
-export interface ChartTimeList {
-  label: string;
-  short: string;
+export interface ChartTime {
+  star: boolean;
   number: number;
   format: CHART_TIME_FORMAT;
 }
 
-export const INITIAL_CHART_TIME_LIST = [
+export interface ChartTimeFormat extends ChartTime {
+  label: string;
+  short: string;
+}
+
+export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   {
     number: 5,
     star: false,
@@ -125,7 +129,11 @@ export const INITIAL_CHART_TIME_LIST = [
   },
 ];
 
-export const format = (number: number, format: CHART_TIME_FORMAT) => {
+export const chartTimeFormat = ({
+  number,
+  star,
+  format,
+}: ChartTime): ChartTimeFormat => {
   let short: string = "";
   switch (format) {
     case CHART_TIME_FORMAT.SECONDS:
@@ -149,6 +157,7 @@ export const format = (number: number, format: CHART_TIME_FORMAT) => {
   }
 
   return {
+    star: star,
     short: short,
     number: number,
     format: format,
