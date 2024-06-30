@@ -19,7 +19,7 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   },
   {
     number: 10,
-    star: false,
+    star: true,
     format: CHART_TIME_FORMAT.SECONDS,
   },
   {
@@ -34,7 +34,7 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   },
   {
     number: 1,
-    star: false,
+    star: true,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
@@ -49,7 +49,7 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   },
   {
     number: 10,
-    star: false,
+    star: true,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
@@ -69,7 +69,7 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   },
   {
     number: 1,
-    star: false,
+    star: true,
     format: CHART_TIME_FORMAT.HOURS,
   },
   {
@@ -84,7 +84,7 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   },
   {
     number: 1,
-    star: false,
+    star: true,
     format: CHART_TIME_FORMAT.DAYS,
   },
   {
@@ -99,7 +99,7 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   },
   {
     number: 1,
-    star: false,
+    star: true,
     format: CHART_TIME_FORMAT.WEEKS,
   },
   {
