@@ -1,5 +1,12 @@
 import { CHART_TIME_FORMAT } from "./format";
 
+export interface ChartTimeList {
+  label: string;
+  short: string;
+  number: number;
+  format: CHART_TIME_FORMAT;
+}
+
 export const INITIAL_CHART_TIME_LIST = [
   {
     number: 5,
