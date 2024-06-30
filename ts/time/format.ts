@@ -1,0 +1,8 @@
+export const enum CHART_TIME_FORMAT {
+  SECONDS = "SECONDS",
+  MINUTES = "MINUTES",
+  HOURS = "HOURS",
+  DAYS = "DAYS",
+  WEEKS = "WEEKS",
+  MONTHS = "MONTHS",
+}
