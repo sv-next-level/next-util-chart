@@ -7,7 +7,7 @@ export const ChartAddTimeSchema = z.object({
     required_error: "star is required",
     invalid_type_error: "star must be a boolean",
   }),
-  time: z
+  time: z.coerce
     .number({
       required_error: "time is required",
       invalid_type_error: "time must be a number",
