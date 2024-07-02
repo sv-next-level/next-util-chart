@@ -34,7 +34,7 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   },
   {
     time: 1,
-    star: true,
+    star: false,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
@@ -44,12 +44,12 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   },
   {
     time: 5,
-    star: false,
+    star: true,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
     time: 10,
-    star: true,
+    star: false,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
@@ -58,18 +58,13 @@ export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
-    time: 30,
-    star: false,
-    format: CHART_TIME_FORMAT.MINUTES,
-  },
-  {
     time: 45,
-    star: false,
+    star: true,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
     time: 1,
-    star: true,
+    star: false,
     format: CHART_TIME_FORMAT.HOURS,
   },
   {
