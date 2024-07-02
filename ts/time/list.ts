@@ -1,8 +1,8 @@
 import { CHART_TIME_FORMAT } from "./format";
 
 export interface ChartTime {
+  time: number;
   star: boolean;
-  number: number;
   format: CHART_TIME_FORMAT;
 }
 
@@ -13,156 +13,156 @@ export interface ChartTimeFormat extends ChartTime {
 
 export const INITIAL_CHART_TIME_LIST: ChartTime[] = [
   {
-    number: 5,
+    time: 5,
     star: false,
     format: CHART_TIME_FORMAT.SECONDS,
   },
   {
-    number: 10,
+    time: 10,
     star: true,
     format: CHART_TIME_FORMAT.SECONDS,
   },
   {
-    number: 15,
+    time: 15,
     star: false,
     format: CHART_TIME_FORMAT.SECONDS,
   },
   {
-    number: 30,
+    time: 30,
     star: false,
     format: CHART_TIME_FORMAT.SECONDS,
   },
   {
-    number: 1,
+    time: 1,
     star: true,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
-    number: 3,
+    time: 3,
     star: false,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
-    number: 5,
+    time: 5,
     star: false,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
-    number: 10,
+    time: 10,
     star: true,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
-    number: 15,
+    time: 15,
     star: false,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
-    number: 30,
+    time: 30,
     star: false,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
-    number: 45,
+    time: 45,
     star: false,
     format: CHART_TIME_FORMAT.MINUTES,
   },
   {
-    number: 1,
+    time: 1,
     star: true,
     format: CHART_TIME_FORMAT.HOURS,
   },
   {
-    number: 2,
+    time: 2,
     star: false,
     format: CHART_TIME_FORMAT.HOURS,
   },
   {
-    number: 3,
+    time: 3,
     star: false,
     format: CHART_TIME_FORMAT.HOURS,
   },
   {
-    number: 1,
+    time: 1,
     star: true,
     format: CHART_TIME_FORMAT.DAYS,
   },
   {
-    number: 3,
+    time: 3,
     star: false,
     format: CHART_TIME_FORMAT.DAYS,
   },
   {
-    number: 5,
+    time: 5,
     star: false,
     format: CHART_TIME_FORMAT.DAYS,
   },
   {
-    number: 1,
+    time: 1,
     star: true,
     format: CHART_TIME_FORMAT.WEEKS,
   },
   {
-    number: 2,
+    time: 2,
     star: false,
     format: CHART_TIME_FORMAT.WEEKS,
   },
   {
-    number: 3,
+    time: 3,
     star: false,
     format: CHART_TIME_FORMAT.WEEKS,
   },
   {
-    number: 1,
+    time: 1,
     star: true,
     format: CHART_TIME_FORMAT.MONTHS,
   },
   {
-    number: 3,
+    time: 3,
     star: false,
     format: CHART_TIME_FORMAT.MONTHS,
   },
   {
-    number: 6,
+    time: 6,
     star: false,
     format: CHART_TIME_FORMAT.MONTHS,
   },
 ];
 
 export const chartTimeFormat = ({
-  number,
+  time,
   star,
   format,
 }: ChartTime): ChartTimeFormat => {
   let short: string = "";
   switch (format) {
     case CHART_TIME_FORMAT.SECONDS:
-      short = `${number}s`;
+      short = `${time}s`;
       break;
     case CHART_TIME_FORMAT.MINUTES:
-      short = `${number}m`;
+      short = `${time}m`;
       break;
     case CHART_TIME_FORMAT.HOURS:
-      short = `${number}h`;
+      short = `${time}h`;
       break;
     case CHART_TIME_FORMAT.DAYS:
-      short = `${number}D`;
+      short = `${time}D`;
       break;
     case CHART_TIME_FORMAT.WEEKS:
-      short = `${number}W`;
+      short = `${time}W`;
       break;
     case CHART_TIME_FORMAT.MONTHS:
-      short = `${number}M`;
+      short = `${time}M`;
       break;
   }
 
   return {
     star: star,
+    time: time,
     short: short,
-    number: number,
     format: format,
-    label: `${number} ${format
-      .substring(0, format.length - (number === 1 ? 1 : 0))
+    label: `${time} ${format
+      .substring(0, format.length - (time === 1 ? 1 : 0))
       .toLocaleLowerCase()}`,
   };
 };
