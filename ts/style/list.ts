@@ -1,6 +1,7 @@
 import {
   AreaChartIcon,
   CandlestickChartIcon,
+  IconProps,
   LineChartIcon,
   // @ts-ignore
 } from "@/nextjs/assets";
@@ -11,7 +12,8 @@ export interface ChartStyle {
   name: CHART_STYLE_NAME;
   series: SERIES;
   star: boolean;
-  icon: SVGAElement;
+  // @ts-ignore
+  icon: (props: IconProps) => JSX.Element;
 }
 
 export const INITIAL_CHART_STYLE_LIST: ChartStyle[] = [
