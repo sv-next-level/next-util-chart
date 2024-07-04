@@ -1,7 +1,9 @@
 import {
-  CENTER as CenterValue,
-  LEFT as LeftValue,
+  TOP as TopValue,
   RIGHT as RightValue,
+  CENTER as CenterValue,
+  BOTTOM as BottomValue,
+  LEFT as LeftValue,
 } from "./index";
 
 export enum HORZ_ALIGN {
@@ -11,7 +13,7 @@ export enum HORZ_ALIGN {
 }
 
 export const enum VERT_ALIGN {
-  LEFT = LeftValue,
-  RIGHT = RightValue,
+  TOP = TopValue,
+  BOTTOM = BottomValue,
   CENTER = CenterValue,
 }
