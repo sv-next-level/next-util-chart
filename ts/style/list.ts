@@ -5,7 +5,7 @@ import {
   LineChartIcon,
   // @ts-ignore
 } from "@/nextjs/assets";
-import { SERIES } from "../series/all";
+import { SERIES } from "../series";
 import { CHART_STYLE_NAME } from "./name";
 
 export interface ChartStyle {

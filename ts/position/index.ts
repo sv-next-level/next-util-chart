@@ -1,7 +1,22 @@
-export * from "./align";
+export const TopValue = "top";
+export const RightValue = "right";
+export const CenterValue = "center";
+export const BottomValue = "bottom";
+export const LeftValue = "left";
 
-export const TOP = "top";
-export const RIGHT = "right";
-export const CENTER = "center";
-export const BOTTOM = "bottom";
-export const LEFT = "left";
+export enum HORZ_ALIGN {
+  LEFT = LeftValue,
+  RIGHT = RightValue,
+  CENTER = CenterValue,
+}
+
+export const enum VERT_ALIGN {
+  TOP = TopValue,
+  BOTTOM = BottomValue,
+  CENTER = CenterValue,
+}
+
+export const enum PRICE_SCALE {
+  LEFT = LeftValue,
+  RIGHT = RightValue,
+}
