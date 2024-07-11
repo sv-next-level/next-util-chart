@@ -10,13 +10,13 @@ export enum HORZ_ALIGN {
   CENTER = CenterValue,
 }
 
-export const enum VERT_ALIGN {
+export enum VERT_ALIGN {
   TOP = TopValue,
   BOTTOM = BottomValue,
   CENTER = CenterValue,
 }
 
-export const enum PRICE_SCALE {
+export enum PRICE_SCALE {
   LEFT = LeftValue,
   RIGHT = RightValue,
 }
